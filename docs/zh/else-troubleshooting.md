@@ -2,7 +2,7 @@
 
 下面列出最常见的故障或设置错误导致的问题。
 
-如果您已经明确问题原因是云服务器产生的，那么请直接阅读[AWS实例故障排查](https://docs.aws.amazon.com/zh_cn/AWSEC2/latest/UserGuide/ec2-instance-troubleshoot.html)。
+如果您已经明确问题原因是云服务器产生的，那么请直接阅读[阿里云实例故障排查](https://help.aliyun.com/knowledge_detail/127067.html)。
 
 #### SFTP无法登录？
 
@@ -14,7 +14,7 @@
 
 #### 实例无法重启？
 
-请联系AWS官方修复
+请联系阿里云官方修复
 
 #### http://公网IP 无法打开软件的初始化界面？
 

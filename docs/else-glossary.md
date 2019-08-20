@@ -1,79 +1,82 @@
-# Glossary
+# 词汇表
 
-#### AWS Portal
+#### AWS 控制台
 
-AWS Portal is the web GUI that build, manage, and monitor everything from simple web apps to complex cloud applications in a single, unified console.
-
-![img](https://libs.websoft9.com/Websoft9/DocsPicture/en/AWS/AWS-portal-websoft9.png)
-
-
-
-#### AWS PowerShell
-
-AWS PowerShell provides a set of cmdlets that use the AWS Resource Manager model for managing your AWS resources. You can use it in your browser with AWS Cloud Shell, or you can install it on your local machine and use it in any PowerShell session.
+AWS控制台，就是用户创建、管理云资源，查看成本费用的后台门户。
 
 #### AWS CLI
 
-The AWS command-line interface (CLI) is Microsoft's cross-platform command-line experience for managing AWS resources. The AWS CLI is easy to learn and the perfect tool for building custom automation that works with AWS resources.
+官方解释：AWS Command Line Interface (AWS CLI) 是一种开源工具，让您能够在命令行 Shell 中使用命令与 AWS 服务进行交互。仅需最少的配置，您就可以从常用终端程序中的命令提示符开始使用基于浏览器的 AWS 管理控制台提供的相同功能
 
-#### AWS Virtual Machines (VM)
+通俗解释：AWS CLI是一套客户端命令程序，支持在Windows,Linux,macOS,AWS Cloud Shell上安装，安装完成之后可以使用统一的命令语法操作AWS的云资源，这就是所谓的跨平台。
 
-AWS Virtual Machines provides on-demand, high-scale, secure, virtualized infrastructure using Windows or Linux Server.
+#### EC2
 
-#### Domain Name
+EC2=云服务器=实例
 
-A domain name is a server or network system name that identifies IP resources connected to the Internet. All domain names are unique worldwide.
+#### DNS
+
+DNS (domain name server)，简单的说就是将域名解析成IP地址的服务
 
 #### AWS Marketplace
 
-AWS Marketplace provides access and information on solutions and services available from Microsoft and our partners. Customers (IT pros and developers) can discover, try to buy cloud software solutions built on or built for AWS. Our catalog of 8,000+ listings provides AWS building blocks, such as Virtual Machines (VMs), APIs, AWS apps, Solution Templates and managed applications, SaaS apps, containers, and consulting services.
-
-#### VM Image
-
-A VM Image containing a single VHD with a generalized operating system is essentially the OS image you are familiar with today. Over time, you will notice that VM Images will become the main image construct for Microsoft AWS Virtual Machines. There are two types of VM Images – generalized and specialized – each serving their own purpose.
-
-#### Marketplace Image
-
-Marketplace Image are the images provided by Publisher on AWS Marketplace
-
-#### Custom Image
-
-Custom images are like marketplace images, but you create them yourself. Custom images can be used to bootstrap configurations such as preloading applications, application configurations, and other OS configurations. In this tutorial, you create your own custom image of an AWS virtual machine
+AWS Marketplace（AWS云市场） 是AWS构建的销售第三方伙伴提供的软件和解决方案的市场平台
 
 #### Port
 
-A port is an endpoint of communication in computer networking. This can be hardware port, a logical port, or both. TCP and UDP ports are identified by their port number (an integer from 0 to 65535).
+Port（端口）是计算机网络中的通信端点。 这可以是硬件端口，逻辑端口或两者。 TCP和UDP端口由其端口号（0到65535之间的整数）标识
 
 #### Secure Shell (SSH)
 
-A cryptographic network protocol for operating network services securely over an unsecured network based at the application layer and transport layer.
+SSH是一种加密网络协议，用于在基于应用层和传输层的不安全网络上安全地操作网络服务。SSH 是目前较可靠，专为远程登录会话和其他网络服务提供安全性的协议
 
 #### Secure Shell key pair (SSH key pair)
 
-An authentication method available for logging in to VM instances remotely. An SSH key pair is a pair of keys generated through an encryption algorithm: one key is publically available (the public key) and the other key is kept confidential (the private key).
+SSH key pair（秘钥对）可用于远程登EC2实例的身份验证方法。 SSH密钥对是通过加密算法生成的一对密钥：一个密钥是公共可用的（公钥），另一个密钥是保密的（私钥）。
 
-If you have placed the public key in a Linux instance, you can use the private key to log on to the instance using SSH commands or related tools from a local computer or another instance without a password.
+如果已将公钥放在Linux实例中，则可以使用私钥通过本地计算机或其他没有密码的实例使用SSH命令或相关工具登录实例。
 
 #### Snapshot
 
-A copy of data on a disk at a certain time point. There are two types of snapshots, automatic snapshots and user-created snapshots.
+Snapshot（快照）是某个时间点磁盘上的数据副本。 有两种类型的快照，自动快照和用户创建的快照。
 
 #### SFTP
 
-SFTP (SSH File Transfer Protocol) is a secure file transfer protocol. It runs over the SSH protocol . It supports the full security and authentication functionality of SSH.
+SFTP（SSH文件传输协议）是一种安全的文件传输协议。 它运行在SSH协议上。 它支持SSH的完整安全性和身份验证功能。
 
-#### Security Group
+#### 安全组
 
-A security group implements access controls for VM, specifying the communication scope of VM. You can define different access control rules for a security group, and these rules take effect for all VM added to this security group. By default, a security group allows all data packets that are sent out from VMin it, and VM in the same security group can access each other.
+安全组（Security Gourp）一种虚拟防火墙，具备状态检测、包过滤功能，设置单台或多台云服务器的网络访问控制。同一安全组内的实例之间网络互通，不同安全组的实例之间默认内网不通，可以授权两个安全组之间互访。
 
-#### VHD
+#### Amazon EBS
 
-An AWS managed disk is a virtual hard disk (VHD). You can think of it like a physical disk in an on-premises server but, virtualized. AWS managed disks are stored as page blobs, which are a random IO storage object in AWS. We call a managed disk ‘managed’ because it is an abstraction over page blobs, blob containers, and AWS storage accounts. With managed disks, all you have to do is provision the disk, and AWS takes care of the rest.
+Amazon EBS 提供块级别的持久存储卷，您可将这些卷附加到正在运行的实例。可以使用 Amazon EBS 作为主要存储设备，以获取需要频繁更新和精细更新的数据。例如，如果在实例上运行数据库，则建议选用 Amazon EBS 作为存储设备。
 
-#### Data disk
+通俗解释：EBS就是持久性虚拟硬盘
 
-A data disk is a managed disk that's attached to a virtual machine to store application data, or other data you need to keep. Data disks are registered as SCSI drives and are labeled with a letter that you choose. Each data disk has a maximum capacity of 32,767 gibibytes (GiB). The size of the virtual machine determines how many data disks you can attach to it and the type of storage you can use to host the disks.
+#### Amazon EC2 实例存储
 
-#### OS disk
+实例存储 为您的实例提供临时性块级存储。此存储位于已物理附加到主机的磁盘上。实例存储是一种理想的临时存储解决方案，非常适合存储需要经常更新的信息，如缓存、缓冲、临时数据和其他临时内容，或者存储从一组实例上复制的数据，如 Web 服务器的负载均衡池。
 
-Every virtual machine has one attached operating system disk. That OS disk has a pre-installed OS, which was selected when the VM was created. This disk has a maximum capacity of 2,048 GiB.
+通俗解释：实例存储就是临时性虚拟硬盘
+
+#### Amazon S3
+Amazon S3 是 Internet 数据的存储库。Amazon S3 提供了可靠、快速和廉价的数据存储基础设施。它的设计理念是通过支持您随时从 Amazon EC2 内部或从网络上的任何地方存储和检索任何数量的数据，从而简化整个网络计算。Amazon S3 以冗余方式跨多个设施在多个设备上存储数据元，允许多个不同的客户端或应用程序线程同时对这些数据元进行读或写操作。您可以使用存储在 Amazon S3 中的冗余数据快速、可靠地恢复实例或应用程序故障。
+
+通俗解释：S3就是对象存储服务
+
+#### 数据盘
+
+数据盘区别于系统盘，故名思议是用于存放数据的硬盘
+
+#### 系统盘
+
+系统盘故名思议是用于启动操作系统的磁盘，同时只要容量足够，系统盘也可以存放数据
+
+#### Route 53
+
+即AWS的域名注册与管理服务
+
+#### 卷
+
+即磁盘

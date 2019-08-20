@@ -14,16 +14,16 @@
 
 * 基于镜像可以直接创建一个实例，基于实例也可以直接创建一个镜像
 
-总结：（卷-->快照） --> （镜像--实例）
+总结：（磁盘-->快照） --> （镜像--实例）
 
 ## 创建快照
 
-对于AWS来说，基于卷来创建快照
+对于阿里云来说，基于磁盘来创建快照
 
-1. 登录到AWS控制台，打开EC2 Dashboard
-2. 打开ELASTIC BLOCK STORE下的卷功能，选择一个卷后，实现“创建”快照操作
-   ![img](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aws/aws-createsnapshot-websoft9.png)
-3. 给快照命名后，开始创建
+1. 登录到阿里云控制台->ECS，点击**存储与快照**下的**云盘**
+2. 点击“创建快照”操作
+   ![img](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aliyun/aliyun-disktosnapshot-websoft9.png)
+3. 根据提示完成后续步骤
 
 ## 创建镜像
 
@@ -31,14 +31,14 @@
 
 ### 实例创建镜像
 
-1. 登录到AWS控制台
-2. 打开需要创建镜像的实例，打开：操作->映像->创建镜像
-![img](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aws/aws-ec2toimage-websoft9.png)
-3. 根据提示完成后续步骤
+1. 登录到阿里云控制台->ECS，找到需要操作的目标实例
+2. 依次打开：更多->磁盘和镜像->创建自定义镜像
+   ![创建自定义镜像](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aliyun/aliyun-createimage-websoft9.png)
+3. 根据提示完成后续操作
 
 ### 快照创建镜像
 
-1. 登录到AWS控制台，进入EC2 Dashboard
-2. 找到ELASTIC BLOCK STORE下的快照功能，列出所有快照
-3. 选择所需的快照，对它进行创建镜像操作
-   ![打开快照](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aws/aws-snapshot-websoft9.png)
+1. 登录到阿里云控制台->ECS，点击**存储与快照**下的**快照**
+2. 选择所需的快照，对它进行“创建自定义镜像”操作
+   ![打开快照](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aliyun/aliyun-snapshottoimage-websoft9.png)
+3. 根据提示完成后续操作

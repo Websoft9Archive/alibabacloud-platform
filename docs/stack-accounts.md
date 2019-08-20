@@ -1,62 +1,41 @@
-# Username and Password
+# 账号密码
 
-You can get the credentials of Database and OS from this chapter
+下面分别就数据库和操作系统的账号密码进行说明：
 
-## Database
+## 数据库
 
-### Database Password
+### 用户名、密码和管理地址
 
-Getting password from Linux and Windows have some difference
+不同的数据库有一定的差异，参考下表：
 
-#### Linux
+| 名称                    | 用户名     | 密码           | 可视化管理地址           |
+| ----------------------- | ---------- | -------------- | ------------------------ |
+| MySQL/Mariadb PHP环境中 | root       | 123456 | http://公网IP/phpmyadmin |
+| MySQL/Mariadb 其他      | root       | 123456  | http://公网IP:9090       |
+| PostgreSQL              | postgres   | 123456  | http://公网IP:9090       |
+| Mongodb                 | adminmongo | 123456  | http://公网IP:9091       |
+| Oracle                  | system     | 123456 | 暂无                     |
+| SQLServer               | sa         | websoft9!  | 使用客户端管理           |
 
-For Linux, the database password was storaged in the file of your VM: *`/credentials/password.txt`*. Suggest you log in AWS Portal and using the online SSH terminal to run the the `cat` command to get the password：
+如果以上密码不可用，那么请通过下面的方案获取密码
 
-![run cat Command](https://libs.websoft9.com/Websoft9/DocsPicture/zh/common/catdbpassword-websoft9.png)
+### 获取数据库密码
 
-#### Windows
+#### Linux系统
 
-For Window, the database password was storaged in the file of your VM:*`c:/credentials/password.txt`*
+对于Linux系统来说，数据库密码存储在您的服务器指定文件中：*`/credentials/password.txt`*。建议通过云控制台直接连接服务器，进入命令终端，运行cat命令获取数据库密码：
 
-You can also find the shortcut for password file from the Windows Desktop
+![运行cat命令](https://libs.websoft9.com/Websoft9/DocsPicture/zh/common/catdbpassword-websoft9.png)
 
-### Database Username and GUI
+#### Windows系统
 
-Different databases have certain differences, refer to the following table:
+对于Windows系统来说，数据库密码存储在您的服务器指定文件中：*`c:/credentials/password.txt`*
 
-| Database                    | Username     | GUI           |
-| ----------------------- | ---------- | ------------------------ |
-| MySQL/Mariadb with PHP | root       | http://Internet IP/phpmyadmin |
-| MySQL/Mariadb     | root       | http://Internet IP:9090       |
-| PostgreSQL              | postgres   | http://Internet IP:9090       |
-| Mongodb                 | adminmongo | http://Internet IP:9091       |
-| Oracle                  | system     | NO                     |
-| SQLServer               | sa         | SQLServer Management Studio,one Desktop client     |
+服务器的桌面上会有打开数据库密码文件的快捷方式
 
 
 
-## OS
+## 操作系统
 
-AWS在创建EC2的时候，只能选择采用秘钥对作为验证方式
-![秘钥对设置](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aws/aws-ec2createpw-websoft9.png)
-
-另外，针对于不同的操作系统（甚至发行版）其用户名是不一样的：
-
-### Linux
-
-- Get the default user name for the AMI that you used to launch your instance
-- For an Ubuntu AMI, the user name is ubuntu.
-- For Amazon Linux 2 or the Amazon Linux AMI, the user name is ec2-user.
-- For a CentOS AMI, the user name is centos.
-- For a Debian AMI, the user name is admin or root.
-- For a Fedora AMI, the user name is ec2-user or fedora.
-- For a RHEL AMI, the user name is ec2-user or root.
-- For a SUSE AMI, the user name is ec2-user or root.
-
-如果 ec2-user 和 root 无法使用，请与 AMI 供应商核实。
-
-以上信息来源于 AWS官方说明，了解[详情](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connection-prereqs.html)。
-
-### Windows
-
-The username is `Administrator`
+阿里云Linux系统默认的账号名称为：`root`  
+阿里云Windows系统默认的账号名称为：`administrator`

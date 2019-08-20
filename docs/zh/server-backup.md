@@ -15,12 +15,13 @@
 2. 打开“自动快照策略”标签 或 自己创建策略
     ![创建快照生命周期策略](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aliyun/aliyun-snapshotstart-websoft9.png)
 3. 在已有的快照策略下，设置磁盘（即将磁盘加入到所属的快照策略中）
+   ![img](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aliyun/aliyun-snapshotconf-websoft9.png)
 4. 下面是一个已经被设置的磁盘示例
     ![设置磁盘](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aliyun/aliyun-snapshotsetdisk-websoft9.png)
 
 ### 创建自定义镜像
 
-如果不算自动备份，而是手动根据需要备份，创建自定义镜像即可：
+如果不做自动备份，而是手动根据需要备份，创建自定义镜像即可：
 
 1. 登录到阿里云控制台->ECS，找到需要操作的目标实例
 2. 依次打开：更多->磁盘和镜像->创建自定义镜像

@@ -1,31 +1,19 @@
-# Public IP Address
+# 公网IP地址
 
-## View
+## 查看
 
-1. Login AWS Portal
-2. In the Overview of VM, you can see the Public IP Address directly
-   ![img](https://libs.websoft9.com/Websoft9/DocsPicture/en/AWS/AWS-publicip-websoft9.png)
-3. If the VM does not have a public IP address entry (or is empty), you need to refer to the next section to mount a public IP address.
+1. 登录到阿里云控制台->ECS
+2. 打开要查看公网IP的实例，我们会看到 **IP地址（公）** 
+   ![查看公网IP](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aliyun/aliyun-getpublicip-websoft9.png)
+3. 如果实例没有公网IP地址项（或为空），需挂载一个弹性公网IP（[参考文档](https://help.aliyun.com/document_detail/72125.html)）
 
-## Mount
+## 更换
 
-When the created VM does not have a public IP address, as long as there is a free (or newly purchased) public IP address, the AWS console can mount the public network IP address to the virtual machine. The specific steps are as follows:
+在创建后六小时内的ECS可以更换公网IP。具体操作步骤如下：
 
-1. Login AWS Portal
-2. Open the VM->Networking, then the Network Interface item
-   ![img](https://libs.websoft9.com/Websoft9/DocsPicture/en/AWS/AWS-networkinterface-websoft9.png)
-
-2. On the details of Network Interface, open the "IP configuration" item and click the "ipconfig1"
-   ![img](https://libs.websoft9.com/Websoft9/DocsPicture/en/AWS/AWS-ipconfig-websoft9.png)
-
-3. Existing public network IP mount operation on ipconfig1
-   ![img](https://libs.websoft9.com/Websoft9/DocsPicture/en/AWS/AWS-ipconfig1-websoft9.png)
-
-4.If there is no public network IP option, you can create a new one.
-   ![img](https://libs.websoft9.com/Websoft9/DocsPicture/en/AWS/AWS-createip-websoft9.png)
-
-## Static IP
-
-The default option for creating a VM is to create a dynamic IP. You can also choose to create a static IP.
-
-   ![img](https://libs.websoft9.com/Websoft9/DocsPicture/en/AWS/AWS-createstaticip-websoft9.png)
+1. 登录ECS管理控制台。
+2. 在左侧导航栏，选择实例与镜像 > 实例。
+3. 找到更换公网IP地址的实例，停止
+4. 然后选择：更多-> 网络和安全组 -> 更换公网IP
+   ![img](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aliyun/aliyun-changeip-websoft9.jpg)
+5. 根据提示完成后续操作

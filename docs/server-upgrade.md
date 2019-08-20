@@ -1,23 +1,10 @@
-# Upgrade
+# 系统更新
 
-There are two options for updating the OS. One is an update management solution that launches the AWS Portal, and the other is using the OS's upgrade solution.
+登录ECS，通过输入更新命令或操作更新功能而实现更新。
 
-## Upgrade by AWS Portal
+### Linux更新
 
-AWS have provided a complete [Automatic upgrade solution](https://aka.ms/updatemanagement)
-
-1. Login AWS Portal, Click the "Update management" on Operation section, then "Enable" it
-  ![Enable update management](https://libs.websoft9.com/Websoft9/DocsPicture/en/AWS/AWS-enableupdate-websoft9.png)
-2. Wait for minutes and the AWS will create an update solution. Click "Schedule update deployment" to start set update policy
-   ![img](https://libs.websoft9.com/Websoft9/DocsPicture/en/AWS/AWS-updateset-websoft9.png)
-
-## Upgrade by OS
-
-Upgrade by OS is implemented by logging in to the VM and inputting an update command or an operation update function, which is different from the update management function of the AWS portal.
-
-### Linux Upgrade
-
-Linux OS update, you only need to run an update command to install most updates
+Linux服务器的更新，只需要运行一条更新命令，即可安装大部分更新
 
 ```shell
 #CentOS or Redhat
@@ -27,8 +14,8 @@ sudo yum update -y
 apt update && apt upgrade -y
 ```
 
-In fact, the image provided by Websoft9 has periodically executed the above update commands through cron of Linux.
+实际上，Websoft9提供的镜像已经将以上更新命令通过计划任务定期执行。
 
-### Windows Upgrade
+### Windows更新
 
-The update of the Windows server is similar to that of the local computer. Manually find the update management program and set the automatic download automatic update.
+Windows服务器的更新与本地电脑类似，手动找到更新管理程序，设置自动下载自动更新即可。

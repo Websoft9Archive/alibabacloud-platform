@@ -1,41 +1,40 @@
-# Create
+# 创建
 
-Here's how to create a VM on AWS.
+下面介绍阿里云上创建服务器实例的说明。
 
-The most basic condition for creating a virtual machine is to prepare a boot disk file for the system disk for the virtual machine. There are two types of template files: one is a image that we are very familiar with, and the other is a VHD (virtual disk) file.
+创建实例最基本的条件是需要给服务器准备一个系统盘的启动模板文件，这个模板最常见的表现形式就是镜像文件
 
-Therefore, there are two ways to create a VM: image-based creation and system-based disk creation.
+下面介绍基于镜像创建云服务器的操作步骤：
 
-## Image-based Creation
+## 创建ECS
 
-1. Log in to the AWS Portal and open: VM -> Create a virtual machine
+1. 登录到阿里云管理控制台->ECS，点击“创建实例”，
+   ![进入ecs控制台](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aliyun/aliyun-createecs-websoft9.png)
+2. 选择计费方式、实例类型等
+   ![选择ECS规格](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aliyun/aliyun-guige-websoft9.png)
 
-2. Select the appropriate image when creating the VM (this is the most important step)
-   ![image.png](http://libs.websoft9.com/Websoft9/DocsPicture/en/AWS/AWS-createvmbyimage-websoft9.png)
+   - 包年包月：一口价包干付费制
+   - 按量付费：按小时付费，用一小时给一小时的钱
+   - 抢占式实例：按小时付费，但每个小时价格会发生变化，例如：0.07--0.8之间波动，最高价0.8是自行设置，当阿里云价格超过0.8这个最高值之时，ECS将自动释放
 
-> Image sources are: official image, Marketplace image and Customized image. If you use the customized image source, the disk can only choose the hosting mode.
+3. 在镜像一栏，有多种选择。
+   - 公共镜像：阿里云官方提供的操作系统镜像
+   - 自定义镜像：用户自己的镜像
+   - 共享镜像：其他人共享给用户的镜像
+   - 镜像市场：由阿里云云市场伙伴提供的镜像
 
-3. Set the account password, network, security group, etc.
+4. 如果选择镜像市场，可以通过搜索关键件词“websoft9”，列出我们相关镜像
+   ![选择Websoft9镜像](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aliyun/aliyun-searchw9image-websoft9.png)
 
-4. "Review + create" after you pass, click "Next"
+4. 选择一个你所需的镜像，开始创建ECS实例
+5. 后续动作基本都会要求用户完成：网络和安全组、密码、公网带宽等设置
+6. 等待几分钟，ECS创建完成后，镜像会作为ECS实例的系统盘启动，即镜像自动部署到实例中
 
-## VHD Creation
+## 秘钥对
 
-1. Log in AWS Portal, click "All Resources", find a disk that has been unattached
-   ![image.png](http://libs.websoft9.com/Websoft9/DocsPicture/en/AWS/AWS-createvmbydisk-websoft9.png)
-2. Click the "Create VM"
-3. Set the account password, network, security group, etc.
-4. "Review + create" after you pass, click "Next"
+在创建ECS时，如下采用秘钥对作为登录凭证，需要提前创建秘钥对
 
-## SSH Key
-
-When creating a EC2, some users prefer to use the SSH key pair as the login credentials.
-
-1. Log in the console of AWS, go EC2->Network&Security->Key Pairs, click the "**Create Key Pair**" button
-   ![创建秘钥对](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-createkeyps-websoft9.png)
-2. Start to Create Key Pair, fill in the key pair name and click "Create", then the key is download by your browser!
-   ![秘钥对名称](https://libs.websoft9.com/Websoft9/DocsPicture/en/aws/aws-keypsname-websoft9.png)
-3. Please save the myKey.pem on your local computer
-4. When you launch instance or connect instance by SSH, key pair is needed.
-
-
+1. 登录阿里云控制台，打开：ECS->网络与安全->秘钥对，点击“**创建秘钥对**”按钮
+   ![创建秘钥对](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aliyun/aliyun-createkeys-websoft9.png)
+2. 为秘钥对命名，例如“myKey”
+3. 点击确认后系统会自动将秘钥对文件 myKey.pem 保存到本地电脑

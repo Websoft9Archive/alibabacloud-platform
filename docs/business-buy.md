@@ -1,33 +1,49 @@
-# Subscriptions
+# 购买
 
-Below is the simple guide for subscriptions on AWS Marketplace:
+下面简单的对阿里云云市场镜像类商品的购买（订阅）做一个说明：
 
-## About
+## 方式
 
-Subscription means buying, when you have completed [image deployment on AWS](/stack-deployment.md) that means you have a  subscrition for this image.
+购买=订阅，具体的表现形式就是 [部署镜像](/zh/stack-deployment.md)
 
-In the AWS, the image is charged by Usage Quantity the same with VM Usage Quantity:
+阿里云平台中，由于实例采用的是按小时计费、包周包月包年等模式，镜像作为云服务器的一个组件，计费模型是一模一样的
 
-- One the image is used on VM, the image Usage Quantity= VM Usage Quantity
-- Need to cancel the image subscription, you need to delete the corresponding VM
-- The VM stops running and the image stops charging
+* 镜像部署到实例后，实例用多长时间=镜像购买多长时间
+* 需要取消镜像订阅，就需要通过更换系统盘将镜像替换掉
 
-## Fee
+## 费用
 
-AWS Marketplace, there are free image and paid image
+阿里云云市场中，有免费的镜像，也有收费的镜像。
 
-Websoft9 provides paid image on the AWS platform, our profit model is to provide enterprise-level open source image and technical support services to customers who are willing to pay through fees.
+Websoft9公司在阿里云平台中提供都是收费镜像，因为我们的盈利模式就是通过收费，为有意愿付费的客户提供企业级开源镜像以及技术支持服务。
 
-> If you want to free to use our product, please refer to our [Github Project](https://github.com/websoft9)）
+> 如果您希望免费使用我们的产品，请部署我们的Ansible自动化脚本（[Github上的主页](https://github.com/websoft9)）
 
-Our image cost will be flexibly priced based on the number of virtual machine CPU cores. The larger the number of cores, the higher the price generally 
+根据阿里云的镜像商品定价模型，我们目前的计费方式为：
 
-Take the Gitlab product we released as an example. The Software Cost listed by the Plan+Pricing on the product page is the image pricing.
+``` text
+按小时：0.09/小时
+首月：20元/小时
+按月续费：20元/小时
+首年：180元/年
+按年续费：180元/年
+```
 
-![img](https://libs.websoft9.com/Websoft9/DocsPicture/zh/AWS/AWS-fee-websoft9.png)
+系统会根据服务器的付费模式选择对应的镜像计费模式
 
-## EULA
+## 查看
 
-EULA (End User Licence Agreement) is a contract between one or more parties based on the proprietary rights of a licensor to grant a right to the licensee to use or access the subject matter of the licence. 
+1. 登录阿里云控制台，找到云市场频道
+2. 默认列出“已购买的服务”
+   ![img](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aliyun/aliyun-mkservices-websoft9.png)
+2. 每个服务可以看到：付费方式，服务商，联系方式，使用指南等信息
 
-Once you have deployment the image of Websoft9 on AWS, that means you have accept[《Websoft9 EULA》](https://support.websoft9.com/docs/legal/eula)
+## 退订
+
+如果你想退订镜像，保留云服务器，只需通过[更换系统盘](/zh/stack-deployment.html#更换系统盘部署)操作即可
+
+## 用户许可协议
+
+最终用户许可协议（End User Licence Agreement，EULA），指的是一家公司的软件与软件的使用者所达成的协议，此协议一般出现在软件安装时。如果使用者拒绝接受这家公司的EULA，那么便不能安装此软件。
+
+一旦您同意在AWS上使用Websoft9的镜像，即表示您已经接受了我们的[《用户许可协议》](https://support.websoft9.com/docs/legal/zh/eula)
