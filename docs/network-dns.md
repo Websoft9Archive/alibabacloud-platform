@@ -12,7 +12,7 @@ AWS给每台EC2实例都配置了一个公有DNS
 
 1. 购买域名(也称之为注册域名)，并完成实名制认证
 2. 登录阿里云控制台，打开域名列表，在所需操作的域名上点击“解析”
-   ![A记录解析](http://libs.websoft9.com/Websoft9/DocsPicture/zh/aliyun/aliyun-dns-websoft9.png)
+   ![A记录解析](http://libs-websoft9-com.oss-cn-qingdao.aliyuncs.com/Websoft9/DocsPicture/en/alicloud/aliyun-dns-websoft9.png)
 3. 增加一个A记录：将域名（或子域名）指向IP的操作(下图示例)
    ![A记录解析](http://libs.websoft9.com/Websoft9/DocsPicture/zh/aliyun/aliyun-dnsrev-websoft9.png)
 2. 保存并等待生效

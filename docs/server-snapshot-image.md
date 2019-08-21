@@ -22,7 +22,7 @@
 
 1. 登录到阿里云控制台->ECS，点击**存储与快照**下的**云盘**
 2. 点击“创建快照”操作
-   ![img](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aliyun/aliyun-disktosnapshot-websoft9.png)
+   ![img](https://libs.websoft9.com/Websoft9/DocsPicture/en/alicloud/aliyun-disktosnapshot-websoft9.png)
 3. 根据提示完成后续步骤
 
 ## 创建镜像
@@ -33,12 +33,12 @@
 
 1. 登录到阿里云控制台->ECS，找到需要操作的目标实例
 2. 依次打开：更多->磁盘和镜像->创建自定义镜像
-   ![创建自定义镜像](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aliyun/aliyun-createimage-websoft9.png)
+   ![创建自定义镜像](https://libs.websoft9.com/Websoft9/DocsPicture/en/alicloud/aliyun-createimage-websoft9.png)
 3. 根据提示完成后续操作
 
 ### 快照创建镜像
 
 1. 登录到阿里云控制台->ECS，点击**存储与快照**下的**快照**
 2. 选择所需的快照，对它进行“创建自定义镜像”操作
-   ![打开快照](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aliyun/aliyun-snapshottoimage-websoft9.png)
+   ![打开快照](https://libs.websoft9.com/Websoft9/DocsPicture/en/alicloud/aliyun-snapshottoimage-websoft9.png)
 3. 根据提示完成后续操作

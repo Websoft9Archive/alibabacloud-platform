@@ -26,7 +26,7 @@ Websoft9已经在 阿里云云市场 上提供了多款镜像（**镜像是云�
    ![进入ecs控制台](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aliyun/aliyun-createecs-websoft9.png)
 2. 在镜像一栏，选择镜像市场->从镜像市场获取更多选择（含操作系统）。
 3. 然后搜索关键件词“websoft9”，列出相关镜像
-   ![选择Websoft9镜像](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aliyun/aliyun-searchw9image-websoft9.png)
+   ![选择Websoft9镜像](http://libs.websoft9.com/Websoft9/DocsPicture/en/alicloud/aliyun-images-2-websoft9.png)
 
 4. 选择一个你所需的镜像，开始创建ECS实例
 5. 后续动作基本都会要求用户完成：选择计费方式、实例类型、网络和安全组等设置
@@ -39,10 +39,10 @@ Websoft9已经在 阿里云云市场 上提供了多款镜像（**镜像是云�
 > 需要注意的是，重装系统意味着系统数据全部会格式化，所以请注意做好数据的备份。
 
 1. 登录到阿里云管理控制台，在”实例“中先停止服务器，依次选择：更多->磁盘和镜像->更换系统盘 
-   ![更换系统盘](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aliyun/aliyun-changesysdisk-websoft9.png)
+   ![更换系统盘](https://libs.websoft9.com/Websoft9/DocsPicture/en/alicloud/aliyun-changesysdisk-websoft9.png)
 
 2. 确认更换后，镜像类型选择“镜像市场”，然后输入搜索关键字”websoft9“，根据提示设置新密码
-   ![选择Websoft9镜像](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aliyun/aliyun-searchw9image-websoft9.png)
+   ![选择Websoft9镜像](http://libs.websoft9.com/Websoft9/DocsPicture/en/alicloud/aliyun-images-2-websoft9.png)
 
 3. 请耐心等待几分钟，直至更换完成
 

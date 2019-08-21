@@ -4,7 +4,7 @@
 
 1. 登录到阿里云控制台->ECS
 2. 打开要查看公网IP的实例，我们会看到 **IP地址（公）** 
-   ![查看公网IP](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aliyun/aliyun-getpublicip-websoft9.png)
+   ![查看公网IP](http://libs.websoft9.com/Websoft9/DocsPicture/en/alicloud/alibabacloud-getip-websoft9.png)
 3. 如果实例没有公网IP地址项（或为空），需挂载一个弹性公网IP（[参考文档](https://help.aliyun.com/document_detail/72125.html)）
 
 ## 更换
@@ -15,5 +15,5 @@
 2. 在左侧导航栏，选择实例与镜像 > 实例。
 3. 找到更换公网IP地址的实例，停止
 4. 然后选择：更多-> 网络和安全组 -> 更换公网IP
-   ![img](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aliyun/aliyun-changeip-websoft9.jpg)
+   ![img](http://libs.websoft9.com/Websoft9/DocsPicture/en/alicloud/aliyun-changeip-websoft9.png)
 5. 根据提示完成后续操作

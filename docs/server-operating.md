@@ -19,8 +19,12 @@
 忘记密码，可以通过阿里云控制台重置：
 
 1. 登录到阿里云控制台，找到所需操作的ECS
+
 2. 点击下面的“重置实例密码”，输入新密码
-   ![调整配置](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aliyun/aliyun-resetpw-websoft9.png)
+   ![调整配置](https://libs.websoft9.com/Websoft9/DocsPicture/en/alicloud/aliyun-resetpw-1-websoft9.png)
+   
+   ![调整配置](https://libs.websoft9.com/Websoft9/DocsPicture/en/alicloud/aliyun-resetpw-2-websoft9.png)
+   
 3. 重启ECS实例，方可生效
 
 ## 升降配

@@ -35,8 +35,8 @@ Websoft9公司在阿里云平台中提供都是收费镜像，因为我们的盈
 
 1. 登录阿里云控制台，找到云市场频道
 2. 默认列出“已购买的服务”
-   ![img](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aliyun/aliyun-mkservices-websoft9.png)
-2. 每个服务可以看到：付费方式，服务商，联系方式，使用指南等信息
+   ![img](http://libs.websoft9.com/Websoft9/DocsPicture/en/alicloud/aliyun-mkservices-websoft9.png)
+4. 每个服务可以看到：付费方式，服务商，联系方式，使用指南等信息
 
 ## 退订
 
