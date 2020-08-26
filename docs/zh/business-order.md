@@ -62,5 +62,5 @@
 1. 登录阿里云控制台，打开云市场频道
 2. 在“订单列表”下选择一个订单，点击“待追评”
    ![订单列表](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aliyun/aliyun-mreview-websoft9.png)
-3. 修改评论，再保存提交 
+3. 修改评论，再保存提交
    ![追评](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aliyun/aliyun-mreview2-websoft9.png)
