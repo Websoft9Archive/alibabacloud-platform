@@ -50,9 +50,11 @@
 对于使用过的镜像商品，您可以给与评价，千万记得给我们好评哦
 
 1. 登录阿里云控制台，打开云市场频道后，系统默认显示已购买的服务
+   ![立即评价](https://cdn.nlark.com/yuque/0/2020/png/1130693/1598432915656-f3dde28c-e129-40b8-801a-7a708a1eb9b6.png)
    ![立即评价](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aliyun/aliyun-getdocfromorder-websoft9.png)
-2. 对没有评价的商品进行评价 
-
+2. 对没有评价的商品进行评价：进入云市场频道后，点击“订单列表”，进入订单列表选择对应商品，点击“待评价”进行评价和留言 
+   ![立即评价](https://cdn.nlark.com/yuque/0/2020/png/1130693/1598433092459-7a2bbc6c-91c8-45fb-873f-dad982cac0f7.png)
+   ![立即评价](https://cdn.nlark.com/yuque/0/2020/png/1130693/1598433467635-e38358cc-4617-4055-8cf3-63c135979081.png)
 
 ## 修改评价
 
