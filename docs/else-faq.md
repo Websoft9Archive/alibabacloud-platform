@@ -1,6 +1,6 @@
 # FAQ
 
-#### What Is the Username of VM?
+#### What Is the Username of VM ?
 
 What Is the Username to Log In to an VM, refer to [Linux Connect](/server-login.md) and [Windows Connect](/server-loginwin.md)
 
