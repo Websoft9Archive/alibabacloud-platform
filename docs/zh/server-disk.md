@@ -37,3 +37,22 @@
 3. 根据提示完成后续操作
 
 > 大多数情况下，磁盘只能增加大小，而不能降低大小
+
+## FAQ
+1. 通过阿里云后台进行云盘扩容后不生效如何解决?
+   阿里云后台添加磁盘后需要自己手动加载或者挂载磁盘。
+   有如下两种方法可解决此问题: 
+* 方法一: 将云盘直接扩容到第一个分区   
+  请参考阿里云官方文档[在线扩容云盘](https://help.aliyun.com/document_detail/111738.html?spm=a2c4g.11186623.6.1139.1d1b33e1TgbDiy) 
+```shell
+  yum install -y cloud-utils-growpart
+  growpart /dev/vda 1
+  resize2fs /dev/vda1 
+```
+  在执行上述命令过程中出现如下报错及解决:
+  unexpected output in sfdisk --version解决方法  
+  语言环境编码问题:
+  LANG=en_US.UTF-8(临时改变)
+
+* 方法二: 将新增云盘容量全部扩展到分区二并格式化   
+  请参考阿里云官方文档[云盘扩展与格式化](https://help.aliyun.com/document_detail/25452.html?spm=a2c4g.11186623.6.1140.4ba4fdc9YgYAMt)
