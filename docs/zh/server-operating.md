@@ -16,12 +16,28 @@
 
 ## 重置密码
 
-忘记密码，可以通过阿里云控制台重置：
+忘记密码，在阿里云控制台有两种方式可以重置密码：
+
+### 直接重置
 
 1. 登录到阿里云控制台，找到所需操作的ECS
 2. 点击下面的“重置实例密码”，输入新密码
    ![调整配置](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aliyun/aliyun-resetpw-websoft9.png)
 3. 重启ECS实例，方可生效
+
+### 发送命令重置
+
+1. 登录到阿里云控制台，找到所需操作的ECS
+2. 点击右侧【远程连接】>【发送命令】，打开相关窗口
+3. 输入的命令如下，点击【执行】按钮
+   ```
+   echo "yourpassword" | passwd --stdin root  
+   ```
+4. 提示如下的信息即表示执行成功
+   ```
+   Changing password for user root.
+   passwd: all authentication tokens updated successfully.
+   ```
 
 ## 升降配
 
