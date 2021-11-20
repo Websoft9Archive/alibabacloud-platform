@@ -25,7 +25,7 @@
    ![调整配置](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aliyun/aliyun-resetpw-websoft9.png)
 3. 重启ECS实例，方可生效
 
-### 发送命令重置
+### 命令重置
 
 1. 登录到阿里云控制台，找到所需操作的ECS
 2. 点击右侧【远程连接】>【发送命令】，打开相关窗口
