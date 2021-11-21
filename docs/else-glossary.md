@@ -1,14 +1,14 @@
 # 词汇表
 
-#### AWS 控制台
+#### AlibabaCloud 控制台
 
-AWS控制台，就是用户创建、管理云资源，查看成本费用的后台门户。
+AlibabaCloud控制台，就是用户创建、管理云资源，查看成本费用的后台门户。
 
-#### AWS CLI
+#### AlibabaCloud CLI
 
-官方解释：AWS Command Line Interface (AWS CLI) 是一种开源工具，让您能够在命令行 Shell 中使用命令与 AWS 服务进行交互。仅需最少的配置，您就可以从常用终端程序中的命令提示符开始使用基于浏览器的 AWS 管理控制台提供的相同功能
+官方解释：AlibabaCloud Command Line Interface (AlibabaCloud CLI) 是一种开源工具，让您能够在命令行 Shell 中使用命令与 AlibabaCloud 服务进行交互。仅需最少的配置，您就可以从常用终端程序中的命令提示符开始使用基于浏览器的 AlibabaCloud 管理控制台提供的相同功能
 
-通俗解释：AWS CLI是一套客户端命令程序，支持在Windows,Linux,macOS,AWS Cloud Shell上安装，安装完成之后可以使用统一的命令语法操作AWS的云资源，这就是所谓的跨平台。
+通俗解释：AlibabaCloud CLI是一套客户端命令程序，支持在Windows,Linux,macOS,AlibabaCloud Cloud Shell上安装，安装完成之后可以使用统一的命令语法操作AlibabaCloud的云资源，这就是所谓的跨平台。
 
 #### EC2
 
@@ -18,9 +18,9 @@ EC2=云服务器=实例
 
 DNS (domain name server)，简单的说就是将域名解析成IP地址的服务
 
-#### AWS Marketplace
+#### AlibabaCloud Marketplace
 
-AWS Marketplace（AWS云市场） 是AWS构建的销售第三方伙伴提供的软件和解决方案的市场平台
+AlibabaCloud Marketplace（AlibabaCloud云市场） 是AlibabaCloud构建的销售第三方伙伴提供的软件和解决方案的市场平台
 
 #### Port
 
@@ -75,7 +75,7 @@ Amazon S3 是 Internet 数据的存储库。Amazon S3 提供了可靠、快速�
 
 #### Route 53
 
-即AWS的域名注册与管理服务
+即AlibabaCloud的域名注册与管理服务
 
 #### 卷
 

@@ -2,7 +2,7 @@
 
 Below are the most common problems caused by failures or setup errors.
 
-If you have already identified the cause of the problem as a VM, please read [AWS Virtual Machine Troubleshooting](https://docs.microsoft.com/en-us/AWS/virtual-machines/troubleshooting/).
+If you have already identified the cause of the problem as a VM, please read [AlibabaCloud Virtual Machine Troubleshooting](https://docs.microsoft.com/en-us/AlibabaCloud/virtual-machines/troubleshooting/).
 
 #### SFTP can't connect?
 
@@ -14,7 +14,7 @@ Check that the account number and password are correct. Please ensure that port 
 
 #### The VM not be restarted?
 
-Please contact AWS to repair it
+Please contact AlibabaCloud to repair it
 
 #### Http://public IP can not open the software initialization interface?
 

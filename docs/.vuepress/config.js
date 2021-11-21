@@ -5,6 +5,10 @@ module.exports = {
 base: '/docs/alibabacloud/',
 dest: 'html/alibabacloud',
 
+head: [
+  ['link', { rel: 'icon', href: '/favicon.ico' }]
+],
+
 //vuepress多语言，区别于主题多语言
 locales: {
     '/': {

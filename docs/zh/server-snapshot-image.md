@@ -42,3 +42,19 @@
 2. 选择所需的快照，对它进行“创建自定义镜像”操作
    ![打开快照](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aliyun/aliyun-snapshottoimage-websoft9.png)
 3. 根据提示完成后续操作
+
+### OSS文件创建对象
+
+阿里云支持将本地镜像文件上传到 OSS 存储之后，再基于这个已上传的文件创建镜像。
+
+1. 登陆到阿里云控制台，依次打开：【实例与镜像】>【镜像】
+
+2. 选择右侧的【导入镜像】功能
+   ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aliyun/alibabacloud-importimage001-websoft9.png)
+
+3. 根据实际情况填写。**操作系统/平台**的选择需特别慎重，它决定控制台是否会通过 Cloud-init 对云服务器初始化工作，以及初始化工作的程度。
+   ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aliyun/alibabacloud-importimage002-websoft9.png)
+
+   > 【Others Linux】和【Customized Linux】区别阅读：（[非标准平台Linux镜像](https://help.aliyun.com/document_detail/48226.html)）
+
+**操作系统/平台** 尽量避免选择 Others Linux 或 Customized Linux。例如： OracleLinux 建议选择 Redhat 

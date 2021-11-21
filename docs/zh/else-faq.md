@@ -5,6 +5,10 @@
 Windows实例的账号名称是`Administrator`，Linux实例的账号名称是`root`  
 更多详情本文档的 [账号密码](/zh/stack-accounts.md) 相关章节
 
+#### 在创建服务器的时候，阿里云是如何对服务器进行初始化的？
+
+阿里云与其他主流的云平台一样，目前都采用 [Cloud-init](https://cloudinit.readthedocs.io/) 这个开源的初始化工具完成相关任务。  
+
 #### 数据库账号密码是什么？
 
 数据库账号密码默认存放在服务器中，参考本文档的[账号密码-数据库](/zh/stack-accounts.md)章节
@@ -27,13 +31,13 @@ Windows实例的账号名称是`Administrator`，Linux实例的账号名称是`r
 
 我们在阿里云的云市场上不提供免费镜像。如果您想免费使用我们的部署包，请通过 [Github](https://github.com/websoft9) 下载我们的自动化脚本，通过Ansible部署。
 
-#### 对于Websoft9的部署包来说，通过Github脚本部署与AWS云市场的镜像部署有区别吗？
+#### 对于Websoft9的部署包来说，通过Github脚本部署与阿里云云市场的镜像部署有区别吗？
 
 部署结果是一样的，只是部署方式不同
 
 #### 如何列出Websoft9在阿里云云市场上的所有产品？
 
-通过 [Websoft9阿里云店铺](https://shop658hlt17.market.aliyun.com/) 查看我们在AWS上的所有镜像，也可以通过搜索关键字“websoft9”列出
+通过 [Websoft9阿里云店铺](https://shop658hlt17.market.aliyun.com/) 查看我们在阿里云上的所有镜像，也可以通过搜索关键字“websoft9”列出
 
 #### 实例上的镜像是否可以更换？
 

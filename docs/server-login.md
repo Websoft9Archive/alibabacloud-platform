@@ -4,15 +4,15 @@ There are two ways to connect to a Linux server: command line and SFTP:
 
 ## Connect by Command
 
-The Command is the basic operation of the Linux system. AWS provides two web-based SSH tools that can be logged in without an account.
+The Command is the basic operation of the Linux system. AlibabaCloud provides two web-based SSH tools that can be logged in without an account.
 
-- Method 1: Log in to the AWS Portal, open the VM -> Operations, click "Run command"
+- Method 1: Log in to the AlibabaCloud Portal, open the VM -> Operations, click "Run command"
 
-![Run command on AWS](https://libs.websoft9.com/Websoft9/DocsPicture/en/AWS/AWS-runcmd-websoft9.png)
+![Run command on AlibabaCloud](https://libs.websoft9.com/Websoft9/DocsPicture/en/AlibabaCloud/AlibabaCloud-runcmd-websoft9.png)
 
-- Method 1: Log in to the AWS Portal, open the VM -> Support+troubleshooting, click "Serial console"
+- Method 1: Log in to the AlibabaCloud Portal, open the VM -> Support+troubleshooting, click "Serial console"
 
-![Run command on AWS](https://libs.websoft9.com/Websoft9/DocsPicture/en/AWS/AWS-runcmd2-websoft9.png)
+![Run command on AlibabaCloud](https://libs.websoft9.com/Websoft9/DocsPicture/en/AlibabaCloud/AlibabaCloud-runcmd2-websoft9.png)
 
 > If you are not used to using the online SSH command line tool provided by the cloud platform, download the SSH client tool (e.g [putty](https://putty.org/)), configure the login information and then connect to Linux.
 
@@ -32,7 +32,7 @@ MySQL Password:@qDg1Vq1!V
 
 ### Sample2: Enable the root username
 
-For security and regulatory requirements, AWS does not open the Linux root account by default, and only provides users with a common account. If you wish to use the root account, enable it by following the steps below:
+For security and regulatory requirements, AlibabaCloud does not open the Linux root account by default, and only provides users with a common account. If you wish to use the root account, enable it by following the steps below:
 
 ```shell
 sudo su

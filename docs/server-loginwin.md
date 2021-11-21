@@ -4,8 +4,8 @@ You can connect to the Window server through the Remote Desktop Tool (MSTSC) on 
 
 Below is the steps of MSTSC connection
 
-1. Log in AWS Portal, get you **Public IP Address of VM**
-   ![Getting IP of AWS VM](https://libs.websoft9.com/Websoft9/DocsPicture/en/AWS/AWS-publicip-websoft9.png)
+1. Log in AlibabaCloud Portal, get you **Public IP Address of VM**
+   ![Getting IP of AlibabaCloud VM](https://libs.websoft9.com/Websoft9/DocsPicture/en/AlibabaCloud/AlibabaCloud-publicip-websoft9.png)
 
 2. Choose a way to open a local computer remote desktop (three-in-one):
 
@@ -22,9 +22,9 @@ Below is the steps of MSTSC connection
    ![img](http://libs.websoft9.com/Websoft9/DocsPicture/en/common/windows-remote002-websoft9.png)
 
 5. Click the Connect button to complete connection to the instance.
-   ![image.png](http://libs.websoft9.com/Websoft9/DocsPicture/en/AWS/AWS-windows2019desktop-websoft9.png)
+   ![image.png](http://libs.websoft9.com/Websoft9/DocsPicture/en/AlibabaCloud/AlibabaCloud-windows2019desktop-websoft9.png)
 
 6. After logging in remotely, you can **copy** the file directly from the local and **paste** the file to the server.
-   ![img](https://libs.websoft9.com/Websoft9/DocsPicture/en/AWS/AWS-copyfilewin-websoft9.png)
+   ![img](https://libs.websoft9.com/Websoft9/DocsPicture/en/AlibabaCloud/AlibabaCloud-copyfilewin-websoft9.png)
 
 7. If you need to use FTP, you need to install the FTP software yourself (Recommended to use FileZilla Server)

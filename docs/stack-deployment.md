@@ -2,7 +2,7 @@
 
 Websoft9已经在 阿里云云市场 上提供了多款镜像（**镜像是云上的一种软件产品交付形态**），覆盖常用的云场景，收到用户的良好反馈。
 
->  是不是想了解有哪些优质的镜像呢？点击 [此处](https://shop658hlt17.market.aliyun.com) 查看Websoft9在AWS上发布的所有镜像。
+>  是不是想了解有哪些优质的镜像呢？点击 [此处](https://shop658hlt17.market.aliyun.com) 查看Websoft9在AlibabaCloud上发布的所有镜像。
 
 那么如何在阿里云上使用这些镜像呢？有两种方法：
 
