@@ -6,7 +6,7 @@
 
 ## 域名解析
 
-AlibabaCloud给每台EC2实例都配置了一个公有DNS
+AlibabaCloud 给每台 EC2实例都配置了一个公有DNS
 
 当EC2配置的是动态IP时，每次重启实例，IP地址都可能会发生变化，导致需要重新解析域名，给运维带来不必要的麻烦。AlibabaCloud的DNS功能，就是帮我们避免这个问题的。
 
@@ -21,21 +21,21 @@ AlibabaCloud给每台EC2实例都配置了一个公有DNS
 
 域名绑定指一台服务器在多网站部署的时候，通过**虚拟主机配置文件**，将每个域名绑定到其对应的网站目录，从而达到每个网站都可以通过域名访问且相会不会干扰的效果。
 
-下面是一个虚拟配置文件范例（LAMP环境）：
+下面是一个虚拟配置文件范例（Apache）：
 
    ~~~ 
-<VirtualHost *:80>
-ServerName www.mydomain.com
-ServerAlias other.mydomain.com
-DocumentRoot "/data/wwwroot/default/mysite2"
-ErrorLog "/var/log/httpd/www.mydomain.com_error_apache.log"
-CustomLog "/var/log/httpd/www.mydomain.com_apache.log" common
-<Directory "/data/wwwroot/default/mysite1">
-Options Indexes FollowSymlinks
-AllowOverride All
-Require all granted
-</Directory>
-</VirtualHost>
+   <VirtualHost *:80>
+   ServerName www.mydomain.com
+   ServerAlias other.mydomain.com
+   DocumentRoot "/data/wwwroot/default/mysite2"
+   ErrorLog "/var/log/httpd/www.mydomain.com_error_apache.log"
+   CustomLog "/var/log/httpd/www.mydomain.com_apache.log" common
+   <Directory "/data/wwwroot/default/mysite1">
+   Options Indexes FollowSymlinks
+   AllowOverride All
+   Require all granted
+   </Directory>
+   </VirtualHost>
    ~~~
 
 通过**登录云服务器**，然后修改配置文件中域名相关的值（ServerName,ServerAlias等）实现绑定域名

@@ -7,7 +7,7 @@ actionLink: /zh/
 
 # 概述
 
-使用 [Websoft9](https://www.websoft9.com) 提供的部署包，需要掌握**阿里云**的基本操作，以便更好的完成安装部署以及运维工作，本文档是对[阿里云官方文档](https://help.aliyun.com/product/25365.html)的简化，并结合部署的实际操作，致力于帮助您快速的掌握最基本的技能。
+使用 [Websoft9](https://www.websoft9.com) 提供的云原生产品，需要掌握**阿里云**的基本操作。本文档是对[官方文档](https://help.aliyun.com/product/25365.html)的简化，结合部署的实际操作，致力于帮助您快速的掌握最基本的技能。
 
 本文档分为五个部分：
 

@@ -11,10 +11,13 @@
 当ECS配置的是动态IP时，每次重启实例，IP地址都可能会发生变化，导致需要重新解析域名，给运维带来不必要的麻烦。阿里云的DNS功能，就是帮我们避免这个问题的。
 
 1. 购买域名(也称之为注册域名)，并完成实名制认证
+
 2. 登录阿里云控制台，打开域名列表，在所需操作的域名上点击“解析”
    ![A记录解析](http://libs.websoft9.com/Websoft9/DocsPicture/zh/aliyun/aliyun-dns-websoft9.png)
+
 3. 增加一个A记录：将域名（或子域名）指向IP的操作(下图示例)
    ![A记录解析](http://libs.websoft9.com/Websoft9/DocsPicture/zh/aliyun/aliyun-dnsrev-websoft9.png)
+
 2. 保存并等待生效
 
 ## 域名绑定
@@ -24,18 +27,18 @@
 下面是一个虚拟配置文件范例（LAMP环境）：
 
    ~~~ 
-<VirtualHost *:80>
-ServerName www.mydomain.com
-ServerAlias other.mydomain.com
-DocumentRoot "/data/wwwroot/default/mysite2"
-ErrorLog "/var/log/httpd/www.mydomain.com_error_apache.log"
-CustomLog "/var/log/httpd/www.mydomain.com_apache.log" common
-<Directory "/data/wwwroot/default/mysite1">
-Options Indexes FollowSymlinks
-AllowOverride All
-Require all granted
-</Directory>
-</VirtualHost>
+   <VirtualHost *:80>
+   ServerName www.mydomain.com
+   ServerAlias other.mydomain.com
+   DocumentRoot "/data/wwwroot/default/mysite2"
+   ErrorLog "/var/log/httpd/www.mydomain.com_error_apache.log"
+   CustomLog "/var/log/httpd/www.mydomain.com_apache.log" common
+   <Directory "/data/wwwroot/default/mysite1">
+   Options Indexes FollowSymlinks
+   AllowOverride All
+   Require all granted
+   </Directory>
+   </VirtualHost>
    ~~~
 
 通过**登录云服务器**，然后修改配置文件中域名相关的值（ServerName,ServerAlias等）实现绑定域名
@@ -53,17 +56,5 @@ Require all granted
 - 服务器地区在中国大陆的对应的域名需要备案
 
 > 阿里云 7*24小时备案专线：95187转3 确保您的备案咨询能够得到及时回复
-
-## oss存储申请https访问
-
-阿里oss存储申请https访问步骤：
-
-1，创建bucket，域名解析时用自有域名关联阿里的域名，记录类型选择CNAME
-2，进入阿里云证书管理控制台，如果您的域名也是阿里申请的，可申请一个1年的免费的证书（过期需要手动续期）
-  在证书列表页面，当申请成功后，状态会显示成【已签发】。点击下载，然后选择其他，里面zip包解压后会同时
-  有私有证书和公有证书
-3，进入阿里云对象存储的bucket后，选中传输管理菜单，选择证书上传，将下载的公钥私钥复制到对应位置，提交
-
-> 过几分钟，您的bucket里的图片或html就可以通过https访问了
 
 

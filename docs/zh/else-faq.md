@@ -27,7 +27,7 @@ Windows实例的账号名称是`Administrator`，Linux实例的账号名称是`r
 
 请参考[退款相关说明](/zh/business-order.html#退款)章节
 
-#### Websoft9有免费镜像吗？
+#### Websoft9 有免费镜像吗？
 
 我们在阿里云的云市场上不提供免费镜像。如果您想免费使用我们的部署包，请通过 [Github](https://github.com/websoft9) 下载我们的自动化脚本，通过Ansible部署。
 
@@ -67,3 +67,11 @@ Windows实例的账号名称是`Administrator`，Linux实例的账号名称是`r
 #### 你们的镜像安全吗？
 
 我们的镜像是经过阿里云安全团队审核后才发布上架的，我认为有一定的安全保障
+
+#### 你们提供个性化部署方案吗？
+
+可以提供，包括：HTTP server 优化，读写分离，集群，高可用性，容器化等多种解决方案。欢迎[与我们联系](https://support.websoft9.com/zh/contact.html)
+
+#### 集成商可以转售 Websoft9 的镜像吗？
+
+我们非常欢迎您转售我们的镜像，我们可以提供多达 40% 的返佣。

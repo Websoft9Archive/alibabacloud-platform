@@ -8,8 +8,9 @@
 
 ## 创建ECS
 
-1. 登录到阿里云管理控制台->ECS，点击“创建实例”，
+1. 登录到阿里云管理控制台，以此打开：【云服务器 ECS】>【实例】>【创建实例】，
    ![进入ecs控制台](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aliyun/aliyun-createecs-websoft9.png)
+
 2. 选择计费方式、实例类型等
    ![选择ECS规格](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aliyun/aliyun-guige-websoft9.png)
 
@@ -21,20 +22,24 @@
    - 公共镜像：阿里云官方提供的操作系统镜像
    - 自定义镜像：用户自己的镜像
    - 共享镜像：其他人共享给用户的镜像
-   - 镜像市场：由阿里云云市场伙伴提供的镜像
+   - 镜像市场：由阿里云云市场伙伴提供的镜像（Websoft9 是这种镜像市场的主要供应商之一）
 
 4. 如果选择镜像市场，可以通过搜索关键件词“websoft9”，列出我们相关镜像
    ![选择Websoft9镜像](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aliyun/aliyun-searchw9image-websoft9.png)
 
 4. 选择一个你所需的镜像，开始创建ECS实例
+
 5. 后续动作基本都会要求用户完成：网络和安全组、密码、公网带宽等设置
+
 6. 等待几分钟，ECS创建完成后，镜像会作为ECS实例的系统盘启动，即镜像自动部署到实例中
 
 ## 秘钥对
 
 在创建ECS时，如下采用秘钥对作为登录凭证，需要提前创建秘钥对
 
-1. 登录阿里云控制台，打开：ECS->网络与安全->秘钥对，点击“**创建秘钥对**”按钮
+1. 登录控制台，打开：【云服务器 ECS】>【实例】>【创建实例】>【秘钥对】，点击“**创建秘钥对**”按钮
    ![创建秘钥对](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aliyun/aliyun-createkeys-websoft9.png)
+
 2. 为秘钥对命名，例如“myKey”
+
 3. 点击确认后系统会自动将秘钥对文件 myKey.pem 保存到本地电脑
