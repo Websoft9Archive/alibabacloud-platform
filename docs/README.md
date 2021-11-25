@@ -25,7 +25,7 @@ The AlibabaCloud platform has some special terms, listed below:
 * AlibabaCloud Portal is the same with Cloud Console
 * DNS is the Domain Name System
 
-More terms, refer to the charpter [《AlibabaCloud Terms》](/else-glossary.md) of this documentation
+More terms, refer to the charter [《AlibabaCloud Terms》](/else-glossary.md) of this documentation
 
 ## Improve
 

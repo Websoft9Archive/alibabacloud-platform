@@ -51,7 +51,6 @@ module.exports = [
       '/else-faq',
       '/else-troubleshooting',
       '/else-glossary',
-      '/else-notices',
     ]
   },
   
