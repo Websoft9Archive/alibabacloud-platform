@@ -37,5 +37,5 @@ Different databases have certain differences, refer to the following table:
 
 ## OS
 
-阿里云Linux系统默认的账号名称为：root
-阿里云Windows系统默认的账号名称为：administrator
+UserName on Linux: `root`  
+UserName on Windows: `administrator`  

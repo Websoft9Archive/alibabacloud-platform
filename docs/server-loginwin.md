@@ -4,14 +4,14 @@ You can connect to the Window server through the Remote Desktop Tool (MSTSC) on 
 
 Below is the steps of MSTSC connection
 
-1. Log in AlibabaCloud Portal, get you **Public IP Address of VM**
-   ![Getting IP of AlibabaCloud VM](https://libs.websoft9.com/Websoft9/DocsPicture/en/AlibabaCloud/AlibabaCloud-publicip-websoft9.png)
+1. Log in AlibabaCloud Console, get you **Public IP Address of ECS**
+   ![Getting IP of Azure ECS](https://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/aliyun-getpublicip-websoft9.png)
 
 2. Choose a way to open a local computer remote desktop (three-in-one):
 
-- - Open **Start** -> **Remote Desktop**
-  - Open **Start**, input "mstsc" directly, the system will search for the Remote Desktop
-  - Using the keyboard **Windows Logo** + **R** to start the command windows, input input "mstsc" to open the Remote Desktop
+   - Open **Start** -> **Remote Desktop**
+   - Open **Start**, input "mstsc" directly, the system will search for the Remote Desktop
+   - Using the keyboard **Windows Logo** + **R** to start the command windows, input input "mstsc" to open the Remote Desktop
 
 3. In the Remote Desktop Connection dialog box, enter the public IP address of the instance. Click Show Options.
 
@@ -22,9 +22,9 @@ Below is the steps of MSTSC connection
    ![img](http://libs.websoft9.com/Websoft9/DocsPicture/en/common/windows-remote002-websoft9.png)
 
 5. Click the Connect button to complete connection to the instance.
-   ![image.png](http://libs.websoft9.com/Websoft9/DocsPicture/en/AlibabaCloud/AlibabaCloud-windows2019desktop-websoft9.png)
+   ![image.png](http://libs.websoft9.com/Websoft9/DocsPicture/en/azure/azure-windows2019desktop-websoft9.png)
 
 6. After logging in remotely, you can **copy** the file directly from the local and **paste** the file to the server.
-   ![img](https://libs.websoft9.com/Websoft9/DocsPicture/en/AlibabaCloud/AlibabaCloud-copyfilewin-websoft9.png)
+   ![img](https://libs.websoft9.com/Websoft9/DocsPicture/en/azure/azure-copyfilewin-websoft9.png)
 
 7. If you need to use FTP, you need to install the FTP software yourself (Recommended to use FileZilla Server)

@@ -4,39 +4,46 @@ There are two ways to connect to a Linux server: command line and SFTP:
 
 ## Connect by Command
 
-The Command is the basic operation of the Linux system. AlibabaCloud provides two web-based SSH tools that can be logged in without an account.
+The command is the basic operation of the Linux system. Blow are the methods for you:  
 
-- Method 1: Log in to the AlibabaCloud Portal, open the VM -> Operations, click "Run command"
+| Methods                                                   | Details                                                     |
+| ------------------------------------------------------ | ------------------------------------------------------------ |
+| Local SSH Connection                                   | Install [Putty](https://putty.org/) to your local computer and run it |
+| [Workbench](https://ecs-workbench.aliyun.com/) Connection |An online web-based tool of AlibabaCloud  |
+| VNC Connection                                           | VNC online web-based tool of AlibabaCloud, you can use it when you can not run Putty or Workbench|
+| Send Remote Commands (Cloud Assistant)                   | To send remote commands, you must use the task execution feature provided by Cloud Assistant|
 
-![Run command on AlibabaCloud](https://libs.websoft9.com/Websoft9/DocsPicture/en/AlibabaCloud/AlibabaCloud-runcmd-websoft9.png)
 
-- Method 1: Log in to the AlibabaCloud Portal, open the VM -> Support+troubleshooting, click "Serial console"
+We use **Workbench Connection** to show you how to connect Linux:
 
-![Run command on AlibabaCloud](https://libs.websoft9.com/Websoft9/DocsPicture/en/AlibabaCloud/AlibabaCloud-runcmd2-websoft9.png)
+1. Login to Console and list all you ECS, then click 【Connect】action for your target ECS
+   ![Connect Action](https://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/aliyun-remoteconnectweb-websoft9.png)
 
-> If you are not used to using the online SSH command line tool provided by the cloud platform, download the SSH client tool (e.g [putty](https://putty.org/)), configure the login information and then connect to Linux.
+2. Then, click the 【Send Remote Call】button of 【Send Remote Commands (Cloud Assistant)】
+
+3. Waiting for loading, and input username and password or Key Pairs to connect it
 
 After connecting to the server through the command line, the following two most common examples of operations are required:
 
-### Sample1: Getting database password
+### Sample 1: Getting database password
 
 For security reasons, each time a user deploys, a unique random database password is generated and stored in the service. Just one of the following commands to view
 
 ```shell
-cat /credentials/password.txt
+sudo cat /credentials/password.txt
 
 //result
 MySQL username:root
 MySQL Password:@qDg1Vq1!V
 ```
 
-### Sample2: Enable the root username
+### Sample 2: Disable the root username
 
-For security and regulatory requirements, AlibabaCloud does not open the Linux root account by default, and only provides users with a common account. If you wish to use the root account, enable it by following the steps below:
+For security and regulatory requirements, if you want to disable the `root` password you should set below:
 
 ```shell
 sudo su
-sudo sed -i 's/#PermitRootLogin yes/PermitRootLogin yes/' /etc/ssh/sshd_config
+sudo sed -i 's/#PermitRootLogin yes/PermitRootLogin no/' /etc/ssh/sshd_config
 sudo systemctl restart sshd
 sudo passwd root
 ```

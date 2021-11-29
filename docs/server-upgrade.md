@@ -1,10 +1,10 @@
-# 系统更新
+# Upgrade
 
-登录ECS，通过输入更新命令或操作更新功能而实现更新。
+You can upgrade system by commands when you connect to it.    
 
-### Linux更新
+### Linux Upgrade
 
-Linux服务器的更新，只需要运行一条更新命令，即可安装大部分更新
+Linux OS update, you only need to run an update command to install most updates
 
 ```shell
 #CentOS or Redhat
@@ -14,8 +14,8 @@ sudo yum update -y
 apt update && apt upgrade -y
 ```
 
-实际上，Websoft9提供的镜像已经将以上更新命令通过计划任务定期执行。
+In fact, the image provided by Websoft9 has periodically executed the above update commands through cron of Linux.
 
-### Windows更新
+### Windows Upgrade
 
-Windows服务器的更新与本地电脑类似，手动找到更新管理程序，设置自动下载自动更新即可。
+The update of the Windows server is similar to that of the local computer. Manually find the update management program and set the automatic download automatic update.

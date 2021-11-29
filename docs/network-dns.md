@@ -6,22 +6,25 @@
 
 ## 域名解析
 
-AlibabaCloud 给每台 EC2实例都配置了一个公有DNS
+阿里云给每台ECS实例都配置了一个公有DNS
 
-当EC2配置的是动态IP时，每次重启实例，IP地址都可能会发生变化，导致需要重新解析域名，给运维带来不必要的麻烦。AlibabaCloud的DNS功能，就是帮我们避免这个问题的。
+当ECS配置的是动态IP时，每次重启实例，IP地址都可能会发生变化，导致需要重新解析域名，给运维带来不必要的麻烦。阿里云的DNS功能，就是帮我们避免这个问题的。
 
 1. 购买域名(也称之为注册域名)，并完成实名制认证
+
 2. 登录阿里云控制台，打开域名列表，在所需操作的域名上点击“解析”
-   ![A记录解析](http://libs-websoft9-com.oss-cn-qingdao.aliyuncs.com/Websoft9/DocsPicture/en/alicloud/aliyun-dns-websoft9.png)
+   ![A记录解析](http://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/aliyun-dns-websoft9.png)
+
 3. 增加一个A记录：将域名（或子域名）指向IP的操作(下图示例)
-   ![A记录解析](http://libs.websoft9.com/Websoft9/DocsPicture/zh/aliyun/aliyun-dnsrev-websoft9.png)
+   ![A记录解析](http://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/aliyun-dnsrev-websoft9.png)
+
 2. 保存并等待生效
 
 ## 域名绑定
 
 域名绑定指一台服务器在多网站部署的时候，通过**虚拟主机配置文件**，将每个域名绑定到其对应的网站目录，从而达到每个网站都可以通过域名访问且相会不会干扰的效果。
 
-下面是一个虚拟配置文件范例（Apache）：
+下面是一个虚拟配置文件范例（LAMP环境）：
 
    ~~~ 
    <VirtualHost *:80>
@@ -49,8 +52,7 @@ AlibabaCloud 给每台 EC2实例都配置了一个公有DNS
 - 购买服务器2个月或以上，就可以由阿里云免费提供备案服务。  
 - 备案过程请通过[阿里云备案系统](https://beian.aliyun.com/order/index.htm)全程操作
 - 备案是纯粹的商务流程活动，没有任何技术门槛，建议用户自行完成
-   ![阿里云备案](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aliyun/aliyun-beian-websoft9.png)
+   ![阿里云备案](https://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/aliyun-beian-websoft9.png)
 - 服务器地区在中国大陆的对应的域名需要备案
 
 > 阿里云 7*24小时备案专线：95187转3 确保您的备案咨询能够得到及时回复
-

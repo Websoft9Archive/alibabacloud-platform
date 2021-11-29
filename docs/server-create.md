@@ -1,46 +1,43 @@
-# 创建
+# Create
 
-下面介绍阿里云上创建服务器实例的说明。
+Here's how to create a ECS on AlibabaCloud.
 
-创建实例最基本的条件是需要给服务器准备一个系统盘的启动模板文件，这个模板最常见的表现形式就是镜像文件
+## ECS Creation
 
-下面介绍基于镜像创建云服务器的操作步骤：
+1. Login to Console, open:【Elastic Compute Service】>【Instances】>【Create Instance】
+   ![create ecs](https://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/aliyun-createcs001-websoft9.png)
 
-## 创建ECS
+2. Select the payment method, instance type like these
+   ![type](https://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/aliyun-guige-websoft9.png)
 
-1. 登录到阿里云管理控制台->ECS，点击“创建实例”，
-   ![进入ecs控制台](https://libs.websoft9.com/Websoft9/DocsPicture/en/alicloud/aliyun-createecs-websoft9.png)
-   
-2. 选择计费方式、实例类型等
-   ![选择ECS规格](https://libs.websoft9.com/Websoft9/DocsPicture/en/alicloud/aliyun-guige-websoft9.png)
+   - Subscription: Allows you to pay upfront and then use the service over a period of time.  
+   - Pay-As-You-Go: A billing method based on the amount of resources you actually use.  
+   - Preemptible Instance: A billing method based on the amount of resources you actually use. 
 
-   - 包年包月：一口价包干付费制
-   - 按量付费：按小时付费，用一小时给一小时的钱
-   - 抢占式实例：按小时付费，但每个小时价格会发生变化，例如：0.07--0.8之间波动，最高价0.8是自行设置，当阿里云价格超过0.8这个最高值之时，ECS将自动释放
+3. Select the **Image** step is very important
 
-3. 在镜像一栏，有多种选择。
-   
-   ![](http://libs.websoft9.com/Websoft9/DocsPicture/en/alicloud/aliyun-images-1-websoft9.png)
-   
-   - 公共镜像：阿里云官方提供的操作系统镜像
-- 自定义镜像：用户自己的镜像
-   - 共享镜像：其他人共享给用户的镜像
-   - 镜像市场：由阿里云云市场伙伴提供的镜像
-   
-4. 如果选择镜像市场，可以通过搜索关键件词“websoft9”，列出我们相关镜像
-   ![选择Websoft9镜像](http://libs.websoft9.com/Websoft9/DocsPicture/en/alicloud/aliyun-images-2-websoft9.png)
+   - Public Image: Alibaba Cloud provides official public images. 
+   - Custom Image: Created from system snapshots of yourself
+   - Shared Image: Other user shared for you
+   - Marketplace Image: Alibaba Cloud Marketplace provides hundreds of high-quality third-party images that have undergone a strict review process.
 
-5. 选择一个你所需的镜像，开始创建ECS实例
+4. If you use the Marketplace Image, suggest use the search key "websoft9"
 
-6. 后续动作基本都会要求用户完成：网络和安全组、密码、公网带宽等设置
+   ![search websoft9 image](https://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/aliyun-searchwebsoft9ls-websoft9.png)
 
-7. 等待几分钟，ECS创建完成后，镜像会作为ECS实例的系统盘启动，即镜像自动部署到实例中
+4. Select the image you want to use
 
-## 秘钥对
+5. Go to next steps, include set Networking, System Configurations and so on
 
-在创建ECS时，如下采用秘钥对作为登录凭证，需要提前创建秘钥对
+6. Wait 2-3 minutes for the ECS running when completed these steps
 
-1. 登录阿里云控制台，打开：ECS->网络与安全->秘钥对，点击“**创建秘钥对**”按钮
-   ![创建秘钥对](https://libs.websoft9.com/Websoft9/DocsPicture/zh/aliyun/aliyun-createkeys-websoft9.png)
-2. 为秘钥对命名，例如“myKey”
-3. 点击确认后系统会自动将秘钥对文件 myKey.pem 保存到本地电脑
+## Key Pairs
+
+You should create **Key Pairs** before create ECS if you want to use Key Pairs for ECS connection
+
+1. Login to Console, open:【Elastic Compute Service】>【Network and Security】>【Create Key Pairs】
+   ![Key Pairs](https://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/aliyun-createkey-websoft9.png)
+
+2. Set the **SSH Key Pair Name** and select **Creation Mode**
+
+3. When you complete the creation, please download the ××××.pem to your local computer

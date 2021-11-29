@@ -75,3 +75,9 @@ Windows实例的账号名称是`Administrator`，Linux实例的账号名称是`r
 #### 集成商可以转售 Websoft9 的镜像吗？
 
 我们非常欢迎您转售我们的镜像，我们可以提供多达 40% 的返佣。
+
+#### 阿里云 WorkBench 是用来干什么的？
+
+它用于连接 ECS。支持命令连接，也支持桌面连接；支持 Linux，也支持 Windows
+
+![WorkBench](http://libs.websoft9.com/Websoft9/DocsPicture/zh/aliyun/aliyun-workbench-websoft9.png)
