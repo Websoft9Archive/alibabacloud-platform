@@ -50,23 +50,10 @@
 对于使用过的镜像商品，您可以给与评价，千万记得给我们好评哦
 
 1. 登录阿里云控制台，打开【云市场】频道后，系统默认显示已购买的服务
-   ![立即评价](https://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/aliyun-getdocfromorder-websoft9.png)
+   ![立即评价](https://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/aliyun-listorders-websoft9.png)
 
 2. 点击【订单列表】，进入订单列表选择对应商品，点击【待评价】进行评价和留言 
-   ![立即评价](https://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/aliyun-review-websoft9.png)
+   ![立即评价](https://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/aliyun-reviewit-websoft9.png)
 
-3. 评价内容期待您客观反馈，但一定记得给我们打五星哦
-
-## 修改评价
-
-评价是可以修改，参考步骤如下
-
-1. 登录阿里云控制台，打开云市场频道
-
-2. 在“订单列表”下选择一个订单，点击“待追评”
-
-   ![订单列表](https://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/aliyun-mreview-websoft9.png)
-
-3. 修改评论，再保存提交
-
-   ![追评](https://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/aliyun-mreview2-websoft9.png)
+3. 也可以修改参考下图修改评价
+   ![立即评价](https://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/aliyun-mreviewit-websoft9.png)
