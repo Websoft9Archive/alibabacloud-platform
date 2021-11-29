@@ -4,13 +4,13 @@ These steps for you to manage ECS
 
 ## Start, Stop and Release
 
-在ECS控制台可以对实例状态进行修改，包括：
+You can manage the ECS on Console, includes:
 
-- 启动
-- 停止
-- 重启
-- 释放
-- 升降配
+- Start
+- Stop
+- Restart
+- Release
+- Upgrade/Downgrade
 
 释放=删除ECS，使用于按量购买的服务器
 
@@ -44,7 +44,7 @@ These steps for you to manage ECS
    passwd: all authentication tokens updated successfully.
    ```
 
-## Configuration Change
+## Upgrade/Downgrade
 
 ECS 的配置可以调整，具体操作如下：
 
