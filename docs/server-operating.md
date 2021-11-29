@@ -12,33 +12,33 @@ You can manage the ECS on Console, includes:
 - Release
 - Upgrade/Downgrade
 
-释放=删除ECS，使用于按量购买的服务器
+Release ECS mean delete it, suitable for a pay-as-you-go instance that is not locked
 
 ## Reset password
 
-忘记密码，在阿里云控制台有两种方式可以重置密码：
+You can reset the ECS's password by the flowing method: 
 
 ### Reset by Console
 
-1. 登录到阿里云控制台，找到所需操作的ECS
+1. Login to AlibabaCloud console, list the ECS
 
-2. 点击下面的“重置实例密码”，输入新密码
+2. Open the menu:【Password/Key Pair】>【Reset Password】
    ![reset password](https://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/aliyun-resetpw-1-websoft9.png)
    ![reset password](https://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/aliyun-resetpw-2-websoft9.png)
 
-3. 重启ECS实例，方可生效
+3. Restart the ECS and it take effect
 
 ### Reset by Command
 
-1. 登录到阿里云控制台，找到所需操作的ECS
+1. Login to AlibabaCloud console, list the ECS
 
-2. 点击右侧【远程连接】>【发送命令】，打开相关窗口
+2. Open the menu:【Connect】>【Send remote call】
 
-3. 输入的命令如下，点击【执行】按钮
+3. Input your command like below click 【Run】 button
    ```
    echo "yourpassword" | passwd --stdin root  
    ```
-4. 提示如下的信息即表示执行成功
+4. You can receive below message when running successfully
    ```
    Changing password for user root.
    passwd: all authentication tokens updated successfully.
@@ -46,30 +46,30 @@ You can manage the ECS on Console, includes:
 
 ## Upgrade/Downgrade
 
-ECS 的配置可以调整，具体操作如下：
+If you want to change the ECS configuration for business, you should Upgrade or Downgrade it
 
-1. 登录到阿里云控制台，找到所需操作的ECS
+1. Login to AlibabaCloud console, list the ECS
 
-2. 点击右侧的“升降配”，选择一种变更方案
-   ![调整配置](https://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/aliyun-changeecsconfigure-websoft9.png)
+2. Open the 【Upgrade/Downgrade】menu of the target ECS
+   ![upgrade](https://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/aliyun-changeecsconfigure-websoft9.png)
 
-3. 依据相关的操作向导完成变更
+3. You can choose from the following upgrade or downgrade schemes
 
-## Replace System Disk
+## Reinitialize Disk
 
-如果你想将服务器恢复到刚安装之时的状态，就需要用到**重新初始化镜像**操作。
+If you want to recover to ECS to the state of first installation, you need 【Reinitialize Disk】operation: 
 
-1. 登录到阿里云控制台，找到所需操作的ECS
+1. Login to AlibabaCloud console, list the ECS
 
-2. 停止ECS示例
+2. Stop your the target ECS
 
-2. 依次打开：更多->磁盘和镜像->重新初始化镜像
+2. Open the menu: 【More】>【Disk and Image】>【Reinitialize Disk】
    ![Reset System disk](https://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/aliyun-changesysdisk-websoft9.png)
 
-3. 根据系统提示完成后续步骤
+3. Go to the next steps
 
-> 建议仔细理解**更换系统盘**和**重新初始化镜像**的差异
+> Could you distinguish **Reinitialize Disk** and **Replace System Disk**?
 
 ## API/CLI
 
-阿里云为服务器提供一套功能强大、完整的 [API](https://next.api.aliyun.com/) 以及 CLI 操作方式，为自动化提供了坚实的基础。  
+You can use [API/CLI](https://next.api.aliyun.com/) to manage ECS except console

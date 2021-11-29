@@ -11,24 +11,24 @@ You can backup your disk by the below methods:
 
 ### Set automatic Snapshot
 
-1. 登录到阿里云控制台->存储和快照->快照
+1. Login to Console, open:【Elastic Compute Service】>【Storage & Snapshots】>【Snapshots】
 
-2. 打开“自动快照策略”标签 或 自己创建策略
-    ![创建快照生命周期策略](https://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/aliyun-snapshotstart-websoft9.png)
+2. Click the 【Automatic Snapshot Policies】to list and create a policy for you
+    ![create Snapshot policy](https://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/aliyun-snapshotstart-websoft9.png)
 
-3. 在已有的快照策略下，设置磁盘（即将磁盘加入到所属的快照策略中）
-   ![img](https://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/aliyun-snapshotconf-websoft9.png)
+3. **Apply or Disable Automatic Snapshot Policy** for your disk
+   ![Apply or Disable Automatic Snapshot](https://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/aliyun-snapshotconf-websoft9.png)
 
-4. 下面是一个已经被设置的磁盘示例
-    ![设置磁盘](https://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/aliyun-snapshotsetdisk-websoft9.png)
+4. Then you can see that you disk have set snapshot successfully
+    ![Disk snapshot](https://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/aliyun-snapshotsetdisk-websoft9.png)
 
 ### Create Custom Image
 
-如果不做自动备份，而是手动根据需要备份，创建自定义镜像即可：
+If you don't want to set Snapshot, you can create a custom image for your ECS
 
-1. 登录到阿里云控制台->ECS，找到需要操作的目标实例
+1. Login to Console and list all ECS
 
-2. 依次打开：更多->磁盘和镜像->创建自定义镜像
-   ![创建自定义镜像](https://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/aliyun-createimage-websoft9.png)
+2. Open the menu 【Disk and Image】>【Create Custom Image】 for your target ECS
+   ![Create custom image](https://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/aliyun-createimage-websoft9.png)
 
-3. 根据提示完成后续操作
+3. Go to the next steps

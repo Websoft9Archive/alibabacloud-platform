@@ -85,16 +85,6 @@
 
 方案繁琐，参考[官方文档](https://help.aliyun.com/document_detail/134092.html)。  
 
-#### OSS 设置 HTTPS
-
-主要步骤：
-
-1. 完成 CNMAE 域名解析以及绑定至目标 Bucket
-2. 进入阿里云控制台的[云盾](https://yundun.console.aliyun.com/)下，申请一个免费赠书（有效期为一年）
-3. 证书申请成功后，下载它
-4. 到 Bucket 的 HTTPS 配置项中绑定证书
-5. 等待几分钟，HTTPS 生效
-
 ## 场景问题
 
 #### 推荐将 OSS 挂载到 ECS 吗？
@@ -109,3 +99,13 @@
 #### 需要 OSS 这种上传和管理的便捷性怎么办？
 
 可以将磁盘改造成 OSS，参考：[Minio](https://github.com/Websoft9/docker-minio)
+
+#### OSS 如何设置 HTTPS？
+
+主要步骤：
+
+1. 完成 CNMAE 域名解析以及绑定至目标 Bucket
+2. 进入阿里云控制台的[云盾](https://yundun.console.aliyun.com/)下，申请一个免费赠书（有效期为一年）
+3. 证书申请成功后，下载它
+4. 到 Bucket 的 HTTPS 配置项中绑定证书
+5. 等待几分钟，HTTPS 生效

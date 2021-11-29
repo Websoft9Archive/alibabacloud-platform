@@ -70,7 +70,7 @@ Windows实例的账号名称是`Administrator`，Linux实例的账号名称是`r
 
 #### 你们提供个性化部署方案吗？
 
-可以提供，包括：HTTP server 优化，读写分离，集群，高可用性，容器化等多种解决方案。欢迎[与我们联系](https://support.websoft9.com/zh/contact.html)
+可以提供，包括：HTTP 优化，读写分离，集群，高可用性，容器化等多种解决方案。欢迎与我们 [联系](https://support.websoft9.com/zh/contact.html)
 
 #### 集成商可以转售 Websoft9 的镜像吗？
 

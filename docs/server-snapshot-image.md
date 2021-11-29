@@ -1,68 +1,65 @@
-# 快照与镜像
+# Snapshot and Image
 
-之所以我们把快照和镜像放在一起描述，是因为这两者有一定的关联，甚至说有互生关系。
+The reason we put snapshots and image together is because there is a certain relationship between the two, and even there is an alternate relationship.
 
-## 关系
+## Relationship
 
-此处不对快照和镜像进行抽象概念描述，只列出如下几个关键信息点：
+A snapshot is a "photographing" of a disk. As the name suggests, it is to back up the data of a disk at a certain point in time. It is a backup method.  
 
-* 基于磁盘可以创建一个快照。
+Following key information points are listed:
 
-  快照是对磁盘进行“拍照”，顾名思义就是备份某个时间点卷（磁盘）的数据，是一种备份手段
+* A snapshot can be created based on the disk.
+* A image can be created by snapshot, and the image cannot be directly converted into a snapshot.
+* You can create a ECS directly based on Image, and you can create a image directly based on the ECS.
 
-* 基于快照可以创建一个镜像，而镜像无法直接转换成快照。
+> Summary: (disk --> snapshot) --> (image - VM)
 
-* 基于镜像可以直接创建一个实例，基于实例也可以直接创建一个镜像
 
-总结：（磁盘-->快照） --> （镜像--实例）
+## Create Snapshot
 
-## 创建快照
+1. Login to AlibabaCloud console, lis all disk by 【Elastic Compute Service】>【Disk】
 
-对于阿里云来说，基于磁盘来创建快照
-
-1. 登录到阿里云控制台->ECS，点击**存储与快照**下的**云盘**
-
-2. 点击“创建快照”操作
+2. Click the【Create Snapshot】 button to start it
    ![disk to snapshot](https://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/aliyun-disktosnapshot-websoft9.png)
    
-3. 根据提示完成后续步骤
+3. Go to the next steps to complete it
 
-## 创建镜像
+## Create Image
 
-前面讲过，基于快照可以创建镜像，基于实例也可以创建镜像
+Image can be created based on snapshots, and image can be created based on ECS.
 
-### 实例创建镜像
+### By ECS
 
-1. 登录到阿里云控制台->ECS，找到需要操作的目标实例
+1. Login to AlibabaCloud console, lis all ECS by 【Elastic Compute Service】>【Instances】
 
-2. 依次打开：更多->磁盘和镜像->创建自定义镜像
+2. Click the menu 【Disk and Image】>【Create Custom Image】
    ![create image](https://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/aliyun-createimage-websoft9.png)
 
-3. 根据提示完成后续操作
+3. Go to the next steps to complete it
 
-### 快照创建镜像
+### By Snapshot
 
-1. 登录到阿里云控制台->ECS，点击**存储与快照**下的**快照**
+1. Login to AlibabaCloud console, lis all disk by 【Elastic Compute Service】>【Storage & Snapshots】>【Snapshots】
 
-2. 选择所需的快照，对它进行“创建自定义镜像”操作
+2. Select your Snapshot and create an Image for it
    ![create image](https://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/aliyun-snapshottoimage-websoft9.png)
 
-3. 根据提示完成后续操作
+3. Go to the next steps to complete it
 
-### 文件创建镜像
+### By local image
 
-阿里云支持将本地镜像文件上传到 OSS 存储之后，再基于这个已上传的文件创建镜像。
+You can also create Image by OSS file which is your uploaded your local image
 
-1. 登陆到阿里云控制台，依次打开：【实例与镜像】>【镜像】
+1. Login to AlibabaCloud console, lis all ECS by 【Elastic Compute Service】>【Instances and Images】>【Images】
 
-2. 选择右侧的【导入镜像】功能
-   ![](https://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/alibabacloud-importimage001-websoft9.png)
+2. Then click the **Import Image** link to create image by OSS file
+   ![create image by OSS file](https://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/alibabacloud-importimage001-websoft9.png)
 
-3. 根据实际情况填写。**操作系统/平台**的选择需特别慎重，它决定控制台是否会通过 Cloud-init 对云服务器初始化工作，以及初始化工作的程度。
+3. Set the parameters and you must select the correct **Operating System/Platform** for you image
 
-   > 【Others Linux】和【Customized Linux】区别阅读：（[非标准平台Linux镜像](https://help.aliyun.com/document_detail/48226.html)）
+   > What the difference between 【Others Linux】 and 【Customized Linux】? refer to [here](https://help.aliyun.com/document_detail/48226.html)
 
    ![](https://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/alibabacloud-importimage002-websoft9.png)
 
 
-> **操作系统/平台** 尽量避免选择 Others Linux 或 Customized Linux。例如： OracleLinux 建议选择 CentOS 更为合适 
+> If you upload OracleLinux to create image, you should select the CentOS
