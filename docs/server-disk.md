@@ -48,7 +48,7 @@ You can resize your **System Disk** and **Data Disk** online by console
 4. Waiting for the result
 
 
-## 磁盘挂载
+## Mount Disks
 
 If you run `df -m` to list all file system and found that there not increase disk storage, how to resolve it?  
 

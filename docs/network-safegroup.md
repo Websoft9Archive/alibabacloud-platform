@@ -1,15 +1,19 @@
-# 安全组
+# Security Group
 
-安全组是管理ECS端口的功能，端口是服务器上应用程序与外部访问出入访问的通道。下面以**开启80端口为例**，为您介绍安全组的使用
+A [security group](https://www.alibabacloud.com/help/en/doc-detail/25387.html) acts as a virtual firewall for Elastic Compute Service (ECS) instances to control inbound and outbound traffic and improve security. You can use security groups and security group rules to define security domains in the cloud.  
 
-1. 登录到阿里云控制台->ECS
+Below is a sample for you how to **Enable TCP:80** port on security group:  
 
-2. 打开实例下：网络和安全组->安全组配置
-   ![ecs更改安全组](https://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/aliyun-modifysg-websoft9.png)
+1. Login to console, lis all ECS by 【Elastic Compute Service】>【Instances and Images】>【Instances】
 
-3. 编辑安全组规则，选择“入方向”标签，然后点击“快速创建规则”
-   ![ecs更改安全组入](https://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/aliyun-modifysg80-websoft9.png)
+2. Open the menu: 【More】> 【Network and Security Group】>【Configure Security Group】
+   ![ecs change security](https://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/aliyun-modifysg-websoft9.png)
 
-4. 授权对象一般为`0.0.0.0/0`较为合适
+3. Click the 【Add Rules】button to list all rules
+   ![ecs change security](https://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/aliyun-modifysg80-websoft9.png)
 
-3. 点击“确认”按钮即可生效
+4. Then, add a new rule by click the 【Add Rule】button授权对象一般为较为合适
+   - Destination set to **HTTP(80)**
+   - Source set to **0.0.0.0/0**
+
+5. Save it 

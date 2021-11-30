@@ -1,19 +1,23 @@
-# 公网 IP
+# Public IP
 
-## 查看
+Public IP is the IP address for Internet access, that mean it the same with Internet IP
 
-1. 登录到阿里云控制台->ECS
-2. 打开要查看公网IP的实例，我们会看到 **IP地址（公）** 
+## Get IP
+
+1. Login to console, lis all ECS by 【Elastic Compute Service】>【Instances and Images】>【Instances】
+
+2. You can get the Public IP from the list table directly
    ![get ip](https://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/aliyun-getpublicip-websoft9.png)
-3. 如果实例没有公网IP地址项（或为空），需挂载一个弹性公网IP（[参考文档](https://help.aliyun.com/document_detail/72125.html)）
 
-## 更换
+## Change IP
 
-在创建后六小时内的ECS可以更换公网IP。具体操作步骤如下：
+You can also change the Public IP for your ECS
 
-1. 登录ECS管理控制台。
-2. 在左侧导航栏，选择实例与镜像 > 实例。
-3. 找到更换公网IP地址的实例，停止
-4. 然后选择：更多-> 网络和安全组 -> 更换公网IP
+1. Login to console, lis all ECS by 【Elastic Compute Service】>【Instances and Images】>【Instances】
+
+2. Stop the ECS which you want to change IP for it
+
+3. Open the menu: 【More】> 【Network and Security Group】>【Change Public IP Address】
    ![change ip](https://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/aliyun-changeip-websoft9.png)
-5. 根据提示完成后续操作
+
+4. Go to the next steps to complete it

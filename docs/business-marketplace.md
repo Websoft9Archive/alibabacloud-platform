@@ -1,24 +1,25 @@
-# 云市场
+# Marketplace
 
-阿里云云市场是 Websoft9 等第三方软件上提供的软件产品和解决方案库，主要为商业IT软件和服务感兴趣的IT专业人员和云开发人员而设计。
+[Alibaba Cloud Marketplace](https://www.alibabacloud.com/help/product/30488.html) is a software transaction and delivery platform provided by Alibaba Cloud. It supports image and SaaS products.
 
-阿里云云市场有两个版本：[中国版](https://market.aliyun.com) | [国际版](https://marketplace.alibabacloud.com)，分别服务中国客户和全球客户。 
+Alibaba Cloud Marketplace have two distribution: [Chinese](https://market.aliyun.com) | [Global](https://marketplace.alibabacloud.com) 
 
-Websoft9 在阿里云上发布了数百款云原生产品，供用户在实例上一键部署。我们是全球为数不多能够支持中英文产品和服务的云原生技术商：
+Websoft9 is the major ISV at Alibaba Cloud Marketplace, we have publish 200+ product for users. We can provide professional support for Chinese and English languages service.
 
 - [Websoft9 on 阿里云](https://shop658hlt17.market.aliyun.com)
 - [Websoft9 on AlibabaCloud](https://marketplace.alibabacloud.com/store/2116499.html)
 
-## 地区限制
+## Regional restrictions
 
-中国地区用户使用 AlibabaCloud Marketplace需要：
+If you want to use AlibabaCloud Chinese Marketplace, you need to:  
 
-1. 注册账号流程中，有一个增加付款账号，建议选择美国地区
+1. Register AlibabaCloud Account as Chinese region
 
-2. 然后绑定非中国大陆地区信用卡
+2. Bind your Chinese credit card
 
-## 技术支持
+## Support
 
-通过云市场使用我们的镜像产品，我们会提供标准的技术支持：help@websoft9.com
+We provide professional technology support for our user who subscribed our product on Marketplace, you can get help by:
 
-更多支持请访问：https://support.websoft9.com
+- help@websoft9.com
+- https://support.websoft9.com

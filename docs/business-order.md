@@ -1,59 +1,35 @@
-# 订单
+# Orders
 
-在阿里云平台中，镜像部署完成后，就产生了相关的订单
+In the AlibabaCloud platform, after the image deployment is completed, the relevant order is generated.
 
-## 订单编号
+## Order ID
 
-订单编号是开具发票、申请服务等非常重要的凭据。
+Order ID is a only number for manage your software subscription and get support
 
-1. 登录阿里云控制台，打开云市场频道
-   ![订单列表](https://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/aliyun-mk-websoft9.png)
-2. 点击“订单列表”
-   ![订单列表](https://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/aliyun-orderslist-websoft9.png)
-2. 第一列订单编号
+1. Login to AlibabaCloud Console, lis all domains by 【Marketplace】
+   ![Marketplace](https://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/aliyun-mk-websoft9.png)
 
-## 账单
+2. Click the menu:【My orders】
+   ![My orders](https://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/aliyun-orderslist-websoft9.png)
 
-用户在云市场的消费，均可以通过阿里云后台索取发票
+3. You can see the Order ID at the 1st column of table
 
-1. 登录阿里云控制台，激活账单功能
-   ![发票索取](https://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/aliyun-exportfee001-websoft9.png)
+## Bills
 
-2. 导出账单  
-   ![发票索取](https://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/aliyun-exportfee002-websoft9.png)
+1. Login to AlibabaCloud Console, activate bills by 【Marketplace】>【Spending Summary】
+   ![Activate bills](https://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/aliyun-exportfee001-websoft9.png)
+
+2. Export all bills  
+   ![Export all bills ](https://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/aliyun-exportfee002-websoft9.png)
 
 
-## 电子合同
+## Review
 
-对于每一个镜像购买订单，我们提供电子合同下载
+1. Login to AlibabaCloud Console, enter the review entrance by 【Marketplace】>【My Orders】
+   ![list all oder](https://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/aliyun-listorders-websoft9.png)
 
-1. 登录阿里云控制台，打开云市场频道后，点击“订单列表”
-   ![订单列表](https://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/aliyun-orderslist-websoft9.png)
+2. Click 【Waiting for review】to start review it
+   ![review it](https://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/aliyun-reviewit-websoft9.png)
 
-2. 在操作一栏，选择“申请合同”
-
-3. 等待合同生成后即可下载
-
-## 退款
-
-根据阿里云云平台[商务政策](https://help.aliyun.com/knowledge_detail/37096.html)，结合我司实际情况，我们的关于退款的政策简述如下：
-
-* 5天之内，全额退款
-* 5天之后，一般不予以退款
-* 退款发起：客户更换系统盘，将Websoft9的镜像换成其他镜像
-* 退款流程：系统产生退款订单->Websoft9审批->阿里云审批->退款结果
-
-## 评价
-
-镜像是企业级产品，有时候由于客户的认知水平，可能会出现“无法使用”的情况，出现这种情况请不要着急，尽量在第一时刻联系客服。 
-
-对于使用过的镜像商品，您可以给与评价，千万记得给我们好评哦
-
-1. 登录阿里云控制台，打开【云市场】频道后，系统默认显示已购买的服务
-   ![立即评价](https://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/aliyun-listorders-websoft9.png)
-
-2. 点击【订单列表】，进入订单列表选择对应商品，点击【待评价】进行评价和留言 
-   ![立即评价](https://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/aliyun-reviewit-websoft9.png)
-
-3. 也可以修改参考下图修改评价
-   ![立即评价](https://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/aliyun-mreviewit-websoft9.png)
+3. And you can also modify review 
+   ![Modify review](https://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/aliyun-mreviewit-websoft9.png)

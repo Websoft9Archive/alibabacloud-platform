@@ -22,9 +22,9 @@ Below is the steps of MSTSC connection
    ![img](http://libs.websoft9.com/Websoft9/DocsPicture/en/common/windows-remote002-websoft9.png)
 
 5. Click the Connect button to complete connection to the instance.
-   ![image.png](http://libs.websoft9.com/Websoft9/DocsPicture/en/azure/azure-windows2019desktop-websoft9.png)
+   ![image.png](http://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/aliyun-windows2019desktop-websoft9.png)
 
 6. After logging in remotely, you can **copy** the file directly from the local and **paste** the file to the server.
-   ![img](https://libs.websoft9.com/Websoft9/DocsPicture/en/azure/azure-copyfilewin-websoft9.png)
+   ![img](https://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/aliyun-copyfilewin-websoft9.png)
 
 7. If you need to use FTP, you need to install the FTP software yourself (Recommended to use FileZilla Server)
