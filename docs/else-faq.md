@@ -29,7 +29,7 @@ Yes
 
 We do not offer free images on AlibabaCloud. If you want to use our deployment package freely, please download our automation script via [Github] (https://github.com/websoft9) and deploy it via Ansible
 
-#### Is there a difference between the Github script deployment and the Azure cloud market image deployment for Websoft9?
+#### Is there a difference between the Github script deployment and the Cloud deployment for Websoft9?
 
 The deployment results are the same, but the deployment is different.
 
