@@ -10,7 +10,7 @@ Resolve Domain mean that you set a mapping relations between domain and ECS's IP
 
 1. Buy your Domain and register it
 
-2. Login to console, lis all domains by 【Alibaba Cloud DNS】
+2. Login to console, lis all domains by 【AlibabaCloud DNS】
    ![Add a record](http://libs.websoft9.com/Websoft9/DocsPicture/en/aliyun/aliyun-dns-websoft9.png)
 
 3. Add an **Add Record** for it
@@ -20,11 +20,11 @@ Resolve Domain mean that you set a mapping relations between domain and ECS's IP
 
 ## Bind Domain
 
-The precondition for binding a domain is that MingDao can accessed by domain name.
+The precondition for binding a domain is that AlibabaCloud can accessed by domain name.
 
 When there is only one website on the server, you can visit the website without binding domain. While considering the server security and subsequent maintenance, **Binding Domain** is necessary.
 
-Steps for binding MingDao domain are as follows:
+Steps for binding AlibabaCloud domain are as follows:
 
 1. Connect your Cloud Server;
 2. Modify [Nginx vhost configuration file](/stack-components.md#nginx),and change the **server_name** and **proxy_pass** if you want.
@@ -32,7 +32,7 @@ Steps for binding MingDao domain are as follows:
    server
    {
    listen 80;
-   server_name mingdao.yourdomain.com;  # Set your domain
+   server_name websoft9.yourdomain.com;  # Set your domain
        location / {
         proxy_pass  http://127.0.0.1:8880; # Set your port
    ...
